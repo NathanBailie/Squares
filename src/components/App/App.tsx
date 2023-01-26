@@ -30,9 +30,9 @@ const App: React.FC = () => {
 	};
 
 	function createRGB(): string {
-		const red = getRandom(0, 255);
-		const green = getRandom(0, 255);
-		const blue = getRandom(0, 255);
+		const red: number = getRandom(0, 255);
+		const green: number = getRandom(0, 255);
+		const blue: number = getRandom(0, 255);
 		return `rgb(${red}, ${green}, ${blue})`;
 	};
 
@@ -45,7 +45,7 @@ const App: React.FC = () => {
 			if (item.id !== id) {
 				return item;
 			} else {
-				const color = createRGB();
+				const color: string = createRGB();
 				return { ...item, bgColor: color };
 			};
 		});
