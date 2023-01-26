@@ -5,8 +5,6 @@ import uuid from 'react-uuid';
 import { useState, useEffect } from 'react';
 
 
-
-
 const App: React.FC = () => {
 	const width: number = window.innerWidth;
 	const height: number = window.innerHeight;
