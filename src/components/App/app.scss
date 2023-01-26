@@ -1,0 +1,31 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+html {
+	background: black;
+}
+
+.app {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template: 20px / repeat(auto-fit, 20px);
+	gap: 2px;
+	justify-content: center;
+	align-items: center;
+
+	&__quarter {
+		width: 20px;
+		height: 20px;
+		transition: all 1s linear;
+		background: #222222;
+
+		&:hover {
+			transition-duration: 0s;
+		}
+	}
+}
